@@ -5,11 +5,13 @@ import java.util.Random;
 public class Player {
 	private Random rand = new Random();
 	private int guess;
-	private int lowBound = 0;
-	private int highBound = 100;
+	private int lowBound;
+	private int highBound;
 	
 	public void startNewGame() {
 		guess = 0;
+		lowBound = 0;
+		highBound = 100;
 	}
 	
 	public int nextGuess() {
